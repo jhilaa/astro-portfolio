@@ -1,0 +1,8 @@
+Planète;Type;Ressource<br>primaire;Ressource<br>secondaire;Atmosphère;Difficulté;Soleil;Vent;Symbole Du Noyau;Matériau pour le Noyau
+Sylva;Terrestre;Sphalérite;Malachite;Hydrogène<br>Nitrogène/Azote;Facile;Moyen;Moyen;Quartz
+Desolo;Lune terrestre;Wolframite;Sphalérite;aucune;Facile;Fort;Faible;Zinc
+Calidor;Aride;Malachite;Wolframite;Hydrogène<br>Soufre;Moyenne;très élevé;Faible;Poudre Explosive
+Vesania;Exotique;Lithium;Titanite;Hydrogène<br>Nitrogène/Azote<br>Argon;Moyenne;Faible;Fort;Graphène
+Novus;Lune exotique;Hématite;Lithium;Hydrogène<br>Méthane;Moyenne;Fort;Fort;Silicone
+Glacio;Toundra;Titanite;Hématite;Argon;Difficile;Très faible;Très fort;Diamant
+Atrox;Irradiée;aucune;aucune;Hélium<br>Méthane<br>Nitrogène/Azote<br>Soufre;Très difficile;Faible;Faible;Hydrogène

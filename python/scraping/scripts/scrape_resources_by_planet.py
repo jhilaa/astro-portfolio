@@ -42,7 +42,7 @@ for tr in table_rows:
      
 
 #Export en CSV
-with open("resources_by_planet.csv", "w", newline="", encoding="utf-8") as f:
+with open("out/resources_by_planet.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f, delimiter=";")
     writer.writerow(header)
     writer.writerows(rows)

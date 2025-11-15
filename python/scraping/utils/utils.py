@@ -26,8 +26,18 @@ def get_between(soup, start_selector: str, end_selector: str, element_selector: 
                 results.extend(el.select(element_selector))
     return results
 
+# Retourne la <table> dont la première balise <th> contient le texte donné.
+def get_table_by_first_th(soup: BeautifulSoup, text: str):
+    result = None
+    for table in soup.find_all("table"):
+        first_th = table.find("th")
+        if first_th and first_th.get_text(strip=True) == text:
+            result = table
+            break   # on s’arrête dès qu’on a trouvé
+    return result
 
 
+# export en csv "brut"
 def export_csv(filename: str, data: list[list], delimiter=";"):
     with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f, delimiter=delimiter)

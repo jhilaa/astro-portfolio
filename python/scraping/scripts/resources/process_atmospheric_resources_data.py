@@ -4,16 +4,12 @@ from scraping.utils import utils
 import scraping.utils.utils as utils
 
 
-def natural_resources_data_to_csv(soup: BeautifulSoup):
-    print("     ✅ Lancement du script process_natural_resources_data.py")
-    #natural_resources_data = soup.select_one(":nth-child(1)")
-    natural_resources_data = utils.get_between(soup, "#Ressources_Naturelles", "table", "dd")
+def atmospheric_resources_data_to_csv(soup: BeautifulSoup):
+    atmospheric_resources_data = utils.get_between(soup, "#Ressources_atmosphériques", "#Ressources_Composées", "dd")
+  
     rows = [["title", "texte", "icon_data_src"]]  # en-tête
     data = []
-    print("-----------------")
-    print(len(natural_resources_data))
     for element in natural_resources_data:
-        #print (element)
         text = element.get_text(separator="", strip=True)
         icon_data = element.select_one("a:has(img)")
         title = icon_data.get("title") if icon_data else None
